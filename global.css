@@ -1,0 +1,207 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+ 
+@import "nativewind/theme";
+
+
+@theme {
+    --color-background: #fff9e3;
+    --color-foreground: #081126;
+    --color-card: #fff8e7;
+    --color-muted: #f6eecf;
+    --color-muted-foreground: rgba(0, 0, 0, 0.6);
+    --color-primary: #081126;
+    --color-accent: #ea7a53;
+    --color-border: rgba(0, 0, 0, 0.1);
+    --color-success: #16a34a;
+    --color-destructive: #dc2626;
+    --color-subscription: #8fd1bd;
+
+    --fonts-sans:sans-regular;
+    --fonts-sans-light:sans-light;
+    --fonts-sans-semibold:sans-semibold;
+    --fonts-sans-bold:sans-bold;
+    --fonts-sans-extrabold:sans-extrabold;
+
+    --spacing-0: 0px;
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+    --spacing-5: 20px;
+    --spacing-6: 24px;
+    --spacing-7: 28px;
+    --spacing-8: 32px;
+    --spacing-9: 36px;
+    --spacing-10: 40px;
+    --spacing-11: 44px;
+    --spacing-12: 48px;
+    --spacing-14: 56px;
+    --spacing-16: 64px;
+    --spacing-18: 72px;
+    --spacing-20: 80px;
+    --spacing-24: 96px;
+    --spacing-30: 120px;
+}
+
+@layer components {
+    .tabs-icon {
+        @apply size-12 items-center justify-center;
+    }
+
+    .tabs-pill {
+        @apply size-12 items-center justify-center rounded-full bg-transparent;
+    }
+
+    .tabs-active {
+        @apply bg-accent;
+    }
+
+    .tabs-glyph {
+        @apply size-6;
+    }
+
+    .home-header {
+    @apply flex-row items-center justify-between px-1 py-2;
+  }
+
+  .home-user {
+    @apply flex-row items-center gap-3;
+  }
+
+  .home-avatar {
+    @apply w-12 h-12 rounded-full;
+  }
+
+  .home-user-name {
+    @apply text-xl font-bold text-gray-900;
+  }
+
+  .home-add-button {
+    @apply w-11 h-11 rounded-full items-center justify-center bg-white;
+  }
+ .home-balance-card {
+  @apply bg-[#E17B62] rounded-tr-3xl rounded-bl-3xl px-5 py-6 mx-5 mt-6;
+}
+
+
+  .home-balance-label {
+    @apply text-white/80 text-sm font-medium mb-8;
+  }
+
+  .home-balance-row {
+    @apply flex-row items-center justify-between;
+  }
+
+  .home-balance-amount {
+    @apply text-white text-3xl font-bold;
+  }
+    .list-head {
+    @apply flex-row items-center justify-between mt-6 mb-3;
+  }
+
+  .list-title {
+    @apply text-2xl font-bold text-gray-900;
+  }
+
+  .list-action {
+    @apply border border-black rounded-full px-5 py-1.5;
+  }
+
+  .list-action-text {
+    @apply text-sm font-medium text-gray-900;
+  }
+  .upcoming-card {
+    @apply bg-background rounded-2xl p-4 border border-black/20 w-40;
+  }
+
+  .upcoming-row {
+    @apply flex-row items-center gap-3 mb-3;
+  }
+
+  .upcoming-icon {
+    @apply w-11 h-11 rounded-full bg-background;
+  }
+
+  .upcoming-price {
+    @apply text-base font-bold text-gray-900;
+  }
+
+  .upcoming-meta {
+    @apply text-xs text-gray-500;
+  }
+
+  .upcoming-name {
+    @apply text-sm font-semibold text-gray-900 mt-1;
+  }
+
+
+
+   .subs-card {
+    @apply rounded-3xl p-6 border border-black/20 w-full mb-3;
+  }
+
+  .sub-head {
+    @apply flex-row items-center justify-between;
+  }
+
+  .sub-main {
+    @apply flex-row items-center gap-3 flex-1;
+  }
+
+  .sub-icon {
+    @apply w-11 h-11 rounded-xl;
+  }
+
+  .sub-copy {
+    @apply flex-1;
+  }
+
+  .sub-title {
+    @apply text-base font-semibold text-gray-900;
+  }
+
+  .sub-price-box {
+    @apply items-end;
+  }
+
+  .sub-price {
+    @apply text-base font-bold text-gray-900;
+  }
+
+  .sub-billing {
+    @apply text-xs text-gray-500;
+  }
+
+.sub-card-expanded {
+  @apply border-2 border-neutral-900 shadow-md bg-yellow-500; 
+}
+
+.sub-bdy {
+  @apply mt-3 pt-3 border-t border-neutral-900/10;
+}
+
+.sub-details {
+  @apply gap-2;
+}
+
+.sub-row {
+  @apply flex-row items-center justify-between;
+}
+
+.sub-row-label {
+  @apply flex-row items-center;
+  gap: 6px;
+}
+
+.sub-label {
+  @apply text-sm text-neutral-900/70 font-medium;
+}
+
+.sub-value {
+  @apply text-sm text-neutral-900 font-semibold;
+  flex-shrink: 1;
+}
+
+}
